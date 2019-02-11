@@ -78,10 +78,5 @@ ctx.beginPath()
 ctx.fillRect(163,227,70,20)
 ctx.fillRect(210,230,20,100)
 
-//yoda
-ctx.strokeStyle = 'green'
-ctx.fillStyle = 'green'
-ctx.beginPath()
-ctx.quadraticCurveTo(207,200,198,188)
 
 
