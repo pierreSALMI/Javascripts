@@ -10,5 +10,11 @@ setTimeout( () => {
 }, 5000)
 
 // Ajoutez un écouteur d'événement 'click' à l'objet window pour logguer dans la console 'Clicked' 3 secondes après le clique.
+window.addEventListener('click', () => {
+    setTimeout(() => {
+        console.log('Get Clicked');
+    }, 3000);
+})
 
 // Créez un div. Au survol de ce div logguez dans la console 'I was hovered 5.5 seconds ago' 5 secondes plus tard.
+
