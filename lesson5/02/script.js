@@ -30,31 +30,31 @@
 // $('#js-search').val('Search');
 
 
-$('#js-search-form')[0].addEventListener('submit', (event) => {
-    event.preventDefault();
-    var value = $('#js-search').val();
-    if(value == 'Chat'){
-        $('#js-search-result').html(`
-        <p> Miaou! </p>
-        `)
-    } else {
-        $('#js-search-result').html('<p>Pas de resultats pour la recherche : <strong>' + value + '</strong>')
-    }
-});
+// $('#js-search-form')[0].addEventListener('submit', (event) => {
+//     event.preventDefault();
+//     var value = $('#js-search').val();
+//     if(value == 'Chat'){
+//         $('#js-search-result').html(`
+//         <p> Miaou! </p>
+//         `)
+//     } else {
+//         $('#js-search-result').html('<p>Pas de resultats pour la recherche : <strong>' + value + '</strong>')
+//     }
+// });
 
 
 
-// Ajoutez une balise <h1> avec la valeur 'Cats are the weirdest' dans l'article avec l'id js-article-1.
-$('#js-article-1').append('<h1>Cats are the weirdest</h1>');
+// // Ajoutez une balise <h1> avec la valeur 'Cats are the weirdest' dans l'article avec l'id js-article-1.
+// $('#js-article-1').append('<h1>Cats are the weirdest</h1>');
 
-// Ajoutez une balise <div> dans l'article avec l'id js-article-1.
-$('#js-article-1').append('<div> </div>')
+// // Ajoutez une balise <div> dans l'article avec l'id js-article-1.
+// $('#js-article-1').append('<div> </div>')
 
-// Dans la balise <div> de l'article #js-article-1 ajoutez un paragraphe avec la valeur 'He starts to look at me pleadingly, paces around, and meows insistently. He even climbs on top of the book and bites my wrists in protest.'
-$('#js-article-1 div').append('<p> He starts to look at me pleadingly, paces around, and meows insistently. He even climbs on top of the book and bites my wrists in protest.</p>')
+// // Dans la balise <div> de l'article #js-article-1 ajoutez un paragraphe avec la valeur 'He starts to look at me pleadingly, paces around, and meows insistently. He even climbs on top of the book and bites my wrists in protest.'
+// $('#js-article-1 div').append('<p> He starts to look at me pleadingly, paces around, and meows insistently. He even climbs on top of the book and bites my wrists in protest.</p>')
 
-// Dans la balise <div> de l'article #js-article-1 ajoutez un autre paragraphe avec la valeur 'I recently found out that my cat, Marv, hates it when I read aloud.' avant le paragraphe ajouté précédement.
-$('#js-article-1 div').prepend('<p> I recently found out that my cat, Marv, hates it when I read aloud.</p>')
+// // Dans la balise <div> de l'article #js-article-1 ajoutez un autre paragraphe avec la valeur 'I recently found out that my cat, Marv, hates it when I read aloud.' avant le paragraphe ajouté précédement.
+// $('#js-article-1 div').prepend('<p> I recently found out that my cat, Marv, hates it when I read aloud.</p>')
 
 // Après le premier paragraphe (entre les deux paragraphes) de l'article js-article-1 ajoutez une image.
 
@@ -68,3 +68,46 @@ $('#js-article-1 div').prepend('<p> I recently found out that my cat, Marv, hate
 // Supprimez le contenu de l'article #js-article-2.
 
 // Supprimez du DOM l'article #js-article-2.
+
+
+// // Ajoutez la classe 'alert-primary' au <div>.
+// $('#js-alert').addClass('alert-primary');
+
+// // Supprimez la classe 'alert' du <div>. Supprimez la classe 'alert-primary' du <div>.
+// $('#js-alert').removeClass('alert alert-primary');
+
+// // Ajoutez d'un coup les classes 'alert' et 'alert-warning' au <div>.
+// $('#js-alert').addClass('alert alert-warning');
+
+// // Vérifiez si le <div> possède déjà la classe 'alert-warning'. Si oui, supprimez-la.
+// if ($('#js-alert').hasClass('alert-warning')){
+//     $('#js-alert').removeClass('alert-warning')
+// }
+
+// // En cliquant sur le bouton #js-btn, basculez la classe 'alert-success': premier clique ajoute la classe, deuxième clique l'enlève, troisième l'ajoute de nouveau, etc.
+// $('#js-btn')[0].addEventListener('click', () => {
+//     $('#js-alert').toggleClass('alert-success');
+// })
+
+// // Récupérez et logguez dans la console la couleur du fond du bouton.
+// console.log($('#js-btn').css('background-color'));
+
+// // Passez la couleur du fond du bouton en #71b8af.
+// $('#js-btn').css('background-color', '#71b8af');
+
+// // Changez d'un coup la couleur du texte du bouton à #fff2d5 et le radius de la bordure à 3px.
+// $('#js-btn').css({
+//     color: 'fff2d5',
+//     'border-radius': '3px'
+// })
+
+
+if ($('#js-danger-alert').hasClass('alert-danger')){
+    $('#js-danger-alert p').addClass('text-danger');
+    $('#js-danger-alert-btn').removeClass('btn-success');
+}
+
+$('#js-danger-alert-btn')[0].addEventListener('click', () => {
+    $('div').css('display', 'none')
+})
+
